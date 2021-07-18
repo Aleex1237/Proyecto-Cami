@@ -1,0 +1,29 @@
+main .services{
+    max-height: 1000px ;
+    width:70vw;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-gris);
+    border-radius: 40px;
+    padding: 30px;
+    margin: auto;
+    transition: all ease 0.4s;
+    margin-top: 30px;
+}
+
+main .services  section {
+    margin-bottom: 15px
+}
+
+main .services  section h3{
+    text-align: center;
+}
+
+main .services  section ul li{
+    margin-left: 3vw;
+    margin-bottom: 15px
+}
+
+main .services:hover {
+    box-shadow: 1px 1px 0px 2px var(--color-gris);
+}

@@ -1,25 +1,22 @@
-const path = require("path");
-
-
 module.exports = {
     index: (req, res) => {
-        res.sendFile(path.join(__dirname, "../views", "home.html"))
+        return res.render("home",{title: "Inicio"})
     },
 
     contact: (req, res) => {
-        res.sendFile(path.join(__dirname, "../views", "contact.html"))
+        return res.render("contact",{title: "Contacto"})
     },
 
 
     services: (req, res) => {
-        res.sendFile(path.join(__dirname, "../views", "services.html"))
+        return res.render("services",{title: "Servicios"})
     },
 
     aboutMe: (req, res) => {
-        res.sendFile(path.join(__dirname, "../views", "aboutMe.html"))
+        return res.render("aboutMe",{title: "Sobre mi"})
     },
 
     meme: (req, res) => {
-        res.sendFile(path.join(__dirname, "../views", "meme.html"))
+        return res.render("meme",{title: "Meme"})
     }
 }
