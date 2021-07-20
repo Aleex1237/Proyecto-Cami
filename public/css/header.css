@@ -1,58 +1,84 @@
-
-.navbar{
+.barrita{
+    display: none;
+}
+.navbar {
     background-color: var(--color-amarillo-fuerte) !important;
     padding: 0;
 }
-.navbar > .container-fluid{
+
+.navbar>.container-fluid {
     background: none;
     background-color: var(--color-amarillo-fuerte);
 }
 
-.navbar-toggler{
-    border:none;
+.navbar-toggler {
+    border: none;
     background: none;
-    background-color: var(--color-amarillo-fuerte);
 }
 
-.navbar-toggler:focus{
+.navbar-toggler:focus {
     box-shadow: none !important;
-    animation: vueltita 0.9s  1 alternate;
+    animation: vueltita 0.9s 1 alternate;
 }
-navbar-collapse{
+
+navbar-collapse {
     background-color: var(--color-amarillo-fuerte) !important;
 }
-.navbar-nav{
+
+.navbar-nav {
     text-align: center !important;
 }
-.navbar .container-fluid .burger-img img{
+
+.navbar .container-fluid .burger-img img {
     width: 10vw;
 }
+
 @keyframes vueltita {
-    0%{transform: rotateZ(0deg);}
-
-
-        100%{transform: rotateZ(180deg);}
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(180deg);
+    }
 }
+
 @media (min-width:992px) {
-    .navbar{
+    .navbar {
         height: 10vh;
     }
-    .mb-2{
+    .mb-2 {
         margin-right: 0 !important;
     }
-    #navbarSupportedContent{
+    #navbarSupportedContent {
         justify-content: center;
     }
-    .navbar-expand-lg .navbar-nav{
-            justify-content: space-between;
-            width: 110vh;
+    .navbar-expand-lg .navbar-nav {
+        justify-content: space-between;
+        width: 110vh;
     }
-    .navbar-light .navbar-nav .nav-item{
+    .navbar-light .navbar-nav .nav-item {
         width: 9vw;
     }
-    .navbar-light .navbar-nav .nav-link:hover{
-        background-color: var(--color-naranja);
+    .navbar-light .navbar-nav .nav-link {
+        transition: 0.4s;
         border-radius: 20px;
+    }
+    .navbar-light .navbar-nav .nav-link:hover {
+        background-color: var(--color-naranja);
         color: white;
+    }
+    header .barrita {
+        display: initial;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background: rgba(255, 248, 205, 0.7);
+        border-top: solid 1px var(--color-naranja);
+    }
+    header .barrita a:hover{
+        animation: vueltita 1.5s infinite alternate;
+    }
+    header .barrita img{
+        width: 4vw;
     }
 }
