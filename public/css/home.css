@@ -21,6 +21,36 @@
     position: relative;
 }
 
+.home .img-mobile-tablet {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    position: relative;
+}
+
+.home .img-mobile-tablet img {
+    width: 90%;
+}
+
+.home .img-mobile-tablet .filltro-img-mobile {
+    width: 90%;
+    position: absolute;
+    height: 100%;
+    background-color: rgba(255, 248, 205, 0.4);
+}
+
+.home .img-mobile-tablet p {
+    position: absolute;
+    bottom: 10vh;
+    font-size: 5vw;
+    font-weight: bold;
+    color: black;
+    background-color: var(--color-amarillo-fuerte);
+    padding: 15px;
+    box-shadow: 5px 5px 0px;
+}
+
 .home .filtrocarru {
     position: absolute;
     background-color: rgba(255, 248, 205, 0.5);
@@ -119,6 +149,33 @@
 @media (min-width:1024px) {
     .home {
         height: 165vh;
+    }
+    .home .img-mobile-tablet {
+        display: none;
+    }
+    .home .containercarrusel {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .home .containercarrusel p {
+        position: absolute;
+        bottom: 20vh;
+        font-size: 2vw;
+        font-weight: bold;
+        color: black;
+        background-color: var(--color-amarillo-fuerte);
+        padding: 10px;
+        box-shadow: 5px 5px 3px;
+    }
+    .home .containercarrusel img {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .home .containercarrusel .filtrocarru {
+        width: 90%;
+        top: 0%;
+        height: 100%;
     }
     .home .sachi-container {
         flex-direction: row;
