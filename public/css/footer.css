@@ -1,43 +1,38 @@
 footer {
     background-color: var(--color-amarillo-fuerte);
+    width: 100%;
 }
-footer .social-media {
-    background-color: var(--color-amarillo-fuerte);
-}
+
 footer .conjunto-redes {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding-bottom: 15px;
-    background-color: var(--color-amarillo-fuerte);
 }
 
 footer .red a{
-    font-size: 36px;
+    font-size: 20px;
     color: var(--color-gris);
     background-color: var(--color-amarillo-fuerte);
 }
 
-footer .red a i{
-    background-color: var(--color-amarillo-fuerte);
-}
 footer .red {
     border: 1px solid var(--color-gris);
     border-radius: 50%;
     padding: 5px 10px;
-    background-color: var(--color-amarillo-fuerte);
+    margin: 20px 0;
+
 }
 footer h4 {
     display: none;
-    background-color: var(--color-amarillo-fuerte);
 }
 
-footer .red:hover{
+footer .red a i:hover{
     animation-name: spin;
-    animation-duration: 2000ms;
+    animation-duration: 1ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear; 
-    box-shadow: 1px 1px 1px 1px var(--color-gris);
+    color: var(--color-naranja);
 }
 
 @keyframes spin {
@@ -53,9 +48,10 @@ footer .red:hover{
         display: block;
         text-align: center;
         color: var(--color-gris);
+        margin: 15px
     }
     footer .red a{
-        font-size: 50px;
+        font-size: 30px;
     }
     footer .red {
         padding:8px 16px;
