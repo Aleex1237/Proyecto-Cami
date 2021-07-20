@@ -1,0 +1,59 @@
+footer {
+    background-color: var(--color-amarillo-fuerte);
+    width: 100%;
+}
+
+footer .conjunto-redes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 15px;
+}
+
+footer .red a{
+    font-size: 20px;
+    color: var(--color-gris);
+    background-color: var(--color-amarillo-fuerte);
+}
+
+footer .red {
+    border: 1px solid var(--color-gris);
+    border-radius: 50%;
+    padding: 5px 10px;
+    margin: 20px 0;
+
+}
+footer h4 {
+    display: none;
+}
+
+footer .red a i:hover{
+    animation-name: spin;
+    animation-duration: 1ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    color: var(--color-naranja);
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+@media (min-width:768px){
+    footer h4{
+        display: block;
+        text-align: center;
+        color: var(--color-gris);
+        margin: 15px
+    }
+    footer .red a{
+        font-size: 30px;
+    }
+    footer .red {
+        padding:8px 16px;
+    }
+}
