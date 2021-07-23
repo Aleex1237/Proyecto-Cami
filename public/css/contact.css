@@ -79,3 +79,10 @@
         height: 77%;
     }
 }
+@media (min-width:1024px) {
+    .contact main form{
+        height: 90%;
+        margin-top: 3vh;
+    }
+        
+}
