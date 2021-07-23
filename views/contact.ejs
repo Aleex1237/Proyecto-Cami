@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./partials/head")%> 
+
+
+<body class="contact">
+    <%- include("./partials/header")%> 
+    <main>
+        <form action="/">
+            <div class="input-text-container">
+                <input type="text" placeholder="Nombre" required>
+                <input type="text" placeholder="Apellido" required>
+            </div>
+            
+
+            <input type="email" name="" id="" placeholder="E-mail" required>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="Comentario" maxlength="350" ></textarea>
+            <div class="button-container">
+                <button type="submit">enviar</button>
+                <button type="reset">reiniciar</button>
+            </div>
+            
+        </form>
+
+    </main>
+    <%- include("./partials/footer")%> 
+    <%- include("./partials/scripts")%> 
+</body>
+</html>
